@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+  transition: 0.3s ease;
+}
+/* header start*/
+.header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: 90%;
+  /* border: 2px solid red; */
+  margin: auto;
+  margin-top: 2rem;
+  position: sticky;
+  top: 0;
+}
+.header .buttons {
+  display: flex;
+  gap: 1rem;
+}
+.header .navbar {
+  display: flex;
+  gap: 2rem;
+}
+.header .logo a {
+  font-size: 5rem;
+  font-family: "Indie Flower";
+  color: black;
+}
+.header .navbar a {
+  font-size: 1.6rem;
+}
+.header .buttons i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+/* header end*/
+
+/* section banner start*/
+.banner {
+  display: flex;
+
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  background-color: #c1dcdc;
+  /* border: 2px solid blue; */
+  padding: 20px 50px;
+  border-radius: 1.5rem;
+}
+.banner .banner-right {
+  /* border: 2px solid yellow; */
+  /* flex: 1; */
+}
+.banner .banner-left {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid salmon; */
+  /* flex: 2; */
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+}
+.banner .banner-left .banner-left-title {
+  text-align: center;
+}
+.banner .banner-left .banner-left-title h1 {
+  font-size: 5rem;
+  font-family: poppins;
+  text-align: start;
+  max-width: 60rem;
+}
+
+.banner .banner-right img {
+  height: 40rem;
+  width: 100%;
+  object-fit: cover;
+}
+.banner .banner-left .banner-left-contents {
+  display: flex;
+  gap: 6rem;
+}
+
+.banner .banner-left .banner-left-contents .banner-left-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.banner .banner-left .banner-left-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+}
+.banner .banner-left .banner-left-search .input {
+  width: 20rem;
+  height: 4rem;
+  border-radius: 1rem;
+  border: none;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+.banner .banner-left .banner-left-search button {
+  height: 3rem;
+  width: 3rem;
+  background-color: #c1dcdc;
+  border-radius: 1rem;
+  border: none;
+}
+.banner .banner-left .banner-left-search button i {
+  font-size: 1.5rem;
+}
+.banner
+  .banner-left
+  .banner-left-contents
+  .banner-left-content
+  span:nth-child(1) {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.banner
+  .banner-left
+  .banner-left-contents
+  .banner-left-content
+  span:nth-child(2) {
+  font-size: 2rem;
+  font-weight: 400;
+}
+/* section banner end*/
+
+/* section product start*/
+
+.product {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); */
+  gap: 2rem;
+  justify-content: space-between;
+
+  margin-top: 3rem;
+}
+.product .product-left {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  padding: 2rem;
+}
+
+.product-left span {
+  font-size: 18px;
+}
+.product-left h1 {
+  font-size: 32px;
+}
+.product-left button {
+  background-color: #c1dcdc;
+  border: none;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+  border-radius: 10px;
+  gap: 5px;
+  margin-top: 3rem;
+}
+.product-left button i {
+  font-size: 1.5rem;
+}
+
+.product .product-right {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); */
+
+  width: 100%;
+}
+.product .product-right .cards {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+  gap: 2rem;
+}
+.product .product-right .cards p {
+  font-size: 1.5rem;
+}
+.product .product-right .cards span {
+  font-size: 1.5rem;
+}
+.product .product-right .cards .card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.product .product-right .cards .card img {
+  width: 100%;
+  /* object-fit: cover; */
+  background-position: center;
+}
+/* section product end*/
+
+/* ABOUT */
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* ARALIK VERME */
+  background-color: rgba(169, 169, 169, 0.227);
+  margin-top: 50px;
+}
+.about-title {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-top: 10px;
+}
+.about-title h1 {
+  font-size: 32px;
+}
+.about-title p {
+  color: gray;
+  font-size: 4rem;
+}
+.about-title span {
+  font-size: 2rem;
+}
+.about-cards {
+  display: flex;
+  flex-direction: row;
+  padding: 3rem;
+  gap: 3rem;
+}
+.about-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.about-card i {
+  font-size: 42px;
+  background-color: #c1dcdc;
+  padding: 10px;
+  border-radius: 100%;
+}
+.about-card p:nth-child(2) {
+  font-weight: 500;
+  font-size: 3rem;
+}
+.about-card p:nth-child(3) {
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.about-card {
+  text-align: center;
+}
+/* about end*/
+
+/* CATEGORIES */
+.categories {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.categories-title h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+.categories-title p {
+  text-align: center;
+  font-size: 2rem;
+}
+.categories-banners {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  width: 90%;
+  margin: auto;
+  gap: 15px;
+}
+
+.categories-banner img {
+  width: 100%;
+}
+.categories-banner h1 {
+  font-size: 24px;
+}
+.categories-banner-title {
+  width: 280px;
+  text-align: start;
+}
+.categories-banner-title span {
+  font-size: 2rem;
+  width: 280px;
+  text-align: start;
+}
+
+.categories button {
+  background-color: #c1dcdc;
+  border: none;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+  border-radius: 10px;
+  gap: 5px;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* FOOTER */
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  place-items: center;
+  background-color: #c1dcdc;
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 80px;
+  margin-top: 20px;
+}
+.footer-left h1 {
+  font-family: "Indie Flower";
+  font-size: 4rem;
+}
+.footer-left p {
+  font-size: 2rem;
+}
+.footer-left div a i {
+  font-size: 32px;
+  color: gray;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 100%;
+}
+.footer-left div a i:hover {
+  color: black;
+  transform: scale(1.1); /*1.1 kat buyut  */
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: row;
+  margin: 50px;
+}
+.social {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.footer-right ul li {
+  list-style-type: none;
+  margin-right: 20px;
+  margin-bottom: 7px;
+  font-size: 1.6rem;
+}
+.footer-right ul li:nth-child(1) {
+  font-weight: 700;
+}
+/*---------------------- media---------------------------*/
+
+/* @media (max-width: 691px) {
+  .banner .banner-right img {
+    height: 4rem;
+    background-position: center;
+    object-fit: cover;
+  }
+} */
+
+@media (max-width: 996px) {
+  .product {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product .product-left {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1061px) {
+  .about-card p:nth-child(2) {
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  .about-card p:nth-child(3) {
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 690px) {
+  .banner {
+    flex-direction: column;
+    flex-flow: column-reverse;
+  }
+  .banner .banner-right img {
+    height: 50rem;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .header .navbar a {
+    font-size: 2rem;
+  }
+  /* .banner .banner-right {
+    height: 50rem;
+  } */
+  html {
+    font-size: 0.5rem;
+  }
+}
